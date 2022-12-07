@@ -710,6 +710,7 @@ BOOL keepAvAudioSessionAlwaysActive = NO;
             bool isWav=[[audioFile.resourcePath pathExtension] isEqualToString:@"wav"];
             NSMutableDictionary *audioSettings = [NSMutableDictionary dictionaryWithDictionary:
                                             @{AVSampleRateKey: @(44100),
+                                             AVEncoderBitRateKey : @320000,
                                              AVNumberOfChannelsKey: @(1),
                                              }];
             if (isWav)  {
